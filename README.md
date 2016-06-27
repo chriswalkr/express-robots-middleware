@@ -1,6 +1,6 @@
 # express-robots-middleware
 
-https://travis-ci.org/chriswalkr/express-robots-middleware.svg?branch=master
+[![Build Status](https://travis-ci.org/chriswalkr/express-robots-middleware.svg?branch=master)](https://travis-ci.org/chriswalkr/express-robots-middleware)
 
 Middleware for generating robots.txt in Express
 
