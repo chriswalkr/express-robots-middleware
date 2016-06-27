@@ -1,4 +1,7 @@
 # express-robots-middleware
+
+https://travis-ci.org/chriswalkr/express-robots-middleware.svg?branch=master
+
 Middleware for generating robots.txt in Express
 
 # Installation
