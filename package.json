@@ -1,0 +1,38 @@
+{
+  "name": "express-robots-middleware",
+  "version": "1.0.0",
+  "description": "Middleware for Express to add a robots.txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "dev": "node mock.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriswalkr/express-robots-middleware.git"
+  },
+  "keywords": [
+    "express",
+    "robots.txt",
+    "express",
+    "middleware"
+  ],
+  "author": "Chris Walker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chriswalkr/express-robots-middleware/issues"
+  },
+  "homepage": "https://github.com/chriswalkr/express-robots-middleware#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "eslint": "^2.13.1",
+    "express": "^4.14.0",
+    "nock": "^8.0.0",
+    "sinon": "^1.17.4",
+    "supertest": "^1.2.0"
+  },
+  "dependencies": {
+    "is-array": "^1.0.1"
+  }
+}
