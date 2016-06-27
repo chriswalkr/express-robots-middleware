@@ -86,3 +86,17 @@ test("work with a multiple allows and disallows and a crawl-delay", t => {
   const expected = 'User-agent: *\nAllow: /\nDisallow: /login\nDisallow: /private\nCrawl-delay: 5';
   t.is(t.context.fakeRes.send.calledWith(expected), true);
 });
+
+test("work with a multiple user agents", t => {
+  const middleware = expressRobotsMiddleware([{
+    UserAgent: '*',
+    Allow: '/',
+  }, {
+    UserAgent: 'Bad-Bot',
+    Disallow: '/',
+  }]);
+  
+  middleware(undefined, t.context.fakeRes);
+  const expected = 'User-agent: *\nAllow: /\n\nUser-agent: Bad-Bot\nDisallow: /\n\n';
+  t.is(t.context.fakeRes.send.calledWith(expected), true);
+});
