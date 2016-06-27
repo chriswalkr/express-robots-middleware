@@ -27,7 +27,7 @@ const robotsMiddleware = expressRobotsMiddleware({
   Disallow: ['/private'],
   Allow: '/',
   CrawlDelay: '5'
-}]);
+});
 
 app.get('/robots.txt', robotsMiddleware);
 ~~~
