@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/chriswalkr/express-robots-middleware.svg?branch=master)](https://travis-ci.org/chriswalkr/express-robots-middleware)
 
-Middleware for generating robots.txt in Express
+Middleware for generating robots.txt if you're using ExpressJS.
 
 # Installation
 
@@ -15,6 +15,7 @@ npm i express-robots-middleware --save
 * Multiple User Agents
 * Multiple Allow/Disallow
 * Crawl-delay argument
+* Simple API
 
 # Usage
 
